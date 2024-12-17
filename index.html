@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f9f9f9, #eaf2f8);
+            color: #333;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        /* About Me Section */
+        .about-me {
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            background: #ffffff;
+            border: 2px solid #34495e;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-me:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-me h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+        }
+
+        .about-me p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Profile Image */
+        .profile-image img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            border: 5px solid #34495e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-image img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Hobbies Section */
+        .hobbies {
+            margin: 20px auto;
+        }
+
+        .hobbies h2 {
+            font-size: 1.8rem;
+            color: #34495e;
+        }
+
+        .hobbies ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .hobbies li {
+            font-size: 1rem;
+            color: #2c3e50;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .hobbies li::before {
+            content: '•';
+            color: #3498db;
+            font-size: 1.5rem;
+            position: absolute;
+            left: -20px;
+            top: 0;
+        }
+
+        /* Footer Section */
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: white;
+        }
+
+        footer p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        footer button {
+            padding: 12px 24px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        footer button:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .about-me h2, .hobbies h2 {
+                font-size: 1.5rem;
+            }
+
+            footer button {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Profile</h1>
+    </header>
+
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>Hello! My name is Judybelle Manlangite. I'm learning HTML to build amazing websites. 
+           I enjoy coding, reading, and spending time in Church.</p>
+    </section>
+
+    <section class="profile-image">
+        <img src="img1.jpg" alt="Profile Picture" id="profile-img">
+    </section>
+
+    <section class="hobbies">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Coding</li>
+            <li>Reading</li>
+            <li>Church Buddies</li>
+            <li>Photography</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Thank you for visiting my webpage!</p>
+        <button id="fun-button">Click Me for a Fun Message</button>
+    </footer>
+
+    <script>
+        document.getElementById('fun-button').addEventListener('click', function () {
+            alert('Hello! Keep coding and learning amazing things!');
+        });
+    </script>
+</body>
+</html>
